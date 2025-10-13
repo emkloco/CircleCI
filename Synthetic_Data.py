@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 m = 1.5
 b = 2.0
 
-num_points = 67
+num_points = 100
 x_range = (0,10)
 
 X = np.linspace(x_range[0], x_range[1], num_points)
