@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-m = 1.0
-b = 2.5
+m = 1.5
+b = 2.0
 
 num_points = 67
 x_range = (0,10)
