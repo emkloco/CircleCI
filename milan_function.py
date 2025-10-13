@@ -1,6 +1,3 @@
-import unittest
-from milan_function import milan_function
-
 # define the unit tests
 class my_unit_tests(unittest.TestCase):
     def milan_function(self):
