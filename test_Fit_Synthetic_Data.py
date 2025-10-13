@@ -3,6 +3,12 @@ import pandas as pd
 import numpy as np
 from scipy.stats import linregress
 
+# original values and tolerances
+m_true = 1.5
+b_true = 2.0
+tolerance_slope = 0.5
+tolerance_intercept = 0.5
+
 # test if CSV exists
 def test_csv_exists():
     assert os.path.exists('synthetic_data.csv')
@@ -25,7 +31,7 @@ def test_fit_values():
     m_fit = fit.slope
     b_fit = fit.intercept
 
-    # Check slope
+    # check slope
     assert abs(m_fit - m_true) < tolerance_slope, f"Slope {m_fit} differs from true {m_true} by more than {tolerance_slope}"
-    # Check intercept
+    # check intercept
     assert abs(b_fit - b_true) < tolerance_intercept, f"Intercept {b_fit} differs from true {b_true} by more than {tolerance_intercept}"
