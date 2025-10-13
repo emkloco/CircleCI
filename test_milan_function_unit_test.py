@@ -1,5 +1,5 @@
 import unittest
-from milan_function import milan_function
+from milan_function import test_add
 
 # define the unit tests
 class my_unit_tests(unittest.TestCase):
