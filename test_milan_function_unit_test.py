@@ -1,9 +1,9 @@
 import unittest
-from milan_function import test_add
+from milan_function import milan_function
 
 # define the unit tests
 class my_unit_tests(unittest.TestCase):
-    def test_add(self):
+    def milan_function(self):
         
         # test adding integers
         self.assertEqual(milan_function(2, 3), 5)
