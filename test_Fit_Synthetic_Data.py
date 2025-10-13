@@ -21,5 +21,11 @@ def test_csv_numeric():
 def test_fit_values():
     df = pd.read_csv('synthetic_data.csv')
     fit = linregress(df['X'], df['Y'])
-    assert abs(fit.slope - 1.5) < 0.5   # tolerance
-    assert abs(fit.intercept - 2.0) < 0.5
+    
+    m_fit = fit.slope
+    b_fit = fit.intercept
+
+    # Check slope
+    assert abs(m_fit - m_true) < tolerance_slope, f"Slope {m_fit} differs from true {m_true} by more than {tolerance_slope}"
+    # Check intercept
+    assert abs(b_fit - b_true) < tolerance_intercept, f"Intercept {b_fit} differs from true {b_true} by more than {tolerance_intercept}"
