@@ -4,7 +4,7 @@ import numpy as np
 from scipy.stats import linregress
 
 # original values and tolerances
-m_true = 1.5
+m_true = 7.5
 b_true = 2.0
 tolerance_slope = 1
 tolerance_intercept = 1
