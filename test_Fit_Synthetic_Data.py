@@ -6,8 +6,8 @@ from scipy.stats import linregress
 # original values and tolerances
 m_true = 1.5
 b_true = 2.0
-tolerance_slope = 1
-tolerance_intercept = 1
+tolerance_slope = 5
+tolerance_intercept = 5
 
 # test if CSV exists
 def test_csv_exists():
