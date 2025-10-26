@@ -31,7 +31,7 @@ def test_fit_values():
     m_fit = fit.slope
     b_fit = fit.intercept
 
-    # check slope
+    # checks slope
     assert abs(m_fit - m_true) < tolerance_slope, f"Slope {m_fit} differs from true {m_true} by more than {tolerance_slope}"
-    # check intercept
+    # checks intercept
     assert abs(b_fit - b_true) < tolerance_intercept, f"Intercept {b_fit} differs from true {b_true} by more than {tolerance_intercept}"
