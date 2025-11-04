@@ -14,7 +14,7 @@ m_fit = fit.slope
 b_fit = fit.intercept
 print(f"Fitted slope: {m_fit:.2f}, intercept: {b_fit:.2f}")
 
-# plot the original and fitted line
+# plot the original and fitted lines
 plt.scatter(X, Y, label='Noisy data', color='blue')
 plt.plot(X, 1.5 * X + 2.0, color='green', label='Original line')   # original m and b
 plt.plot(X, m_fit * X + b_fit, color='red', linestyle='--', label='Fitted line')
