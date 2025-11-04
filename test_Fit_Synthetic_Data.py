@@ -9,7 +9,7 @@ b_true = 2.0
 tolerance_slope = 1
 tolerance_intercept = 1
 
-# test if CSV exists
+# test if CSV exist
 def test_csv_exists():
     assert os.path.exists('synthetic_data.csv')
 
