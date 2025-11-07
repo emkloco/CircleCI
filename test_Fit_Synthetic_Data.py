@@ -13,7 +13,7 @@ tolerance_intercept = 1
 def test_csv_exists():
     assert os.path.exists('synthetic_data.csv')
 
-# test if plot exists
+# test if plot exist
 def test_plot_exists():
     assert os.path.exists('line_fit_plot.png')
 
