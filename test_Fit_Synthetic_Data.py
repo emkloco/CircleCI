@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from scipy.stats import linregress
 
-# original values and tolerances
+# original values and tolerance
 m_true = 1.5
 b_true = 2.0
 tolerance_slope = 1
